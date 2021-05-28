@@ -1,0 +1,319 @@
+ERROR - 2021-05-23 06:34:03 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 4: AND &quot;Статус&quot; = :Статус:
+                       ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #16, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:34:03 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:34:04 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 4: AND &quot;Статус&quot; = :Статус:
+                       ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #12, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:34:04 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:34:05 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 4: AND &quot;Статус&quot; = :Статус:
+                       ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #12, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:34:05 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:34:05 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 4: AND &quot;Статус&quot; = :Статус:
+                       ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #12, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:34:05 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:34:06 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 4: AND &quot;Статус&quot; = :Статус:
+                       ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #12, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:34:06 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(36): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Items.php(27): App\Models\OrderModel->isExist('brick@bri.ck')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Items->addToCart(Object(App\Models\ItemModel), 'brick@bri.ck')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:36:49 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 3: WHERE &quot;id_покупателя&quot; = :id_покупателя:
+                                ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #12, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('1')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:36:49 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('1')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:37:23 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 3: WHERE &quot;id_покупателя&quot; = :id_покупателя:
+                                ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #12, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('2')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('2')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:37:23 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('2')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('2')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:38:23 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 3: WHERE &quot;id_покупателя&quot; = :id_покупателя:
+                                ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #12, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('1')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:38:23 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('1')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:39:21 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 3: WHERE &quot;id_покупателя&quot; = :id_покупателя:
+                                ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #12, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(91): App\Models\OrderModel->getOrder('1')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:39:21 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(91): App\Models\OrderModel->getOrder('1')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:40:07 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 3: WHERE &quot;id_покупателя&quot; = :id_покупателя:
+                                ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #13, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('1')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:40:07 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('1')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
+ERROR - 2021-05-23 06:40:35 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;:&quot;
+LINE 3: WHERE &quot;id_покупателя&quot; = :id_покупателя:
+                                ^ in /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/nick/Des...', 170, Array)
+#1 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query(Resource id #12, 'SELECT *\nFROM "...')
+#2 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#8 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('1')
+#9 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#10 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#11 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#14 {main}
+CRITICAL - 2021-05-23 06:40:35 --> Call to a member function getResult() on bool
+#0 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#1 /Users/nick/Desktop/php_practice/app/Models/OrderModel.php(17): CodeIgniter\BaseModel->findAll()
+#2 /Users/nick/Desktop/php_practice/app/Controllers/Clients.php(87): App\Models\OrderModel->getOrder('1')
+#3 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->view('1')
+#4 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#5 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/nick/Desktop/php_practice/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /Users/nick/Desktop/php_practice/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/nick/Des...')
+#8 {main}
