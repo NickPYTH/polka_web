@@ -1,0 +1,1120 @@
+<<<<<<< HEAD
+CRITICAL - 2021-06-05 13:45:41 --> Invalid argument supplied for foreach()
+#0 /var/www/html/tools-shop.default-app.website/app/Controllers/Payment.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#2 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/tools-shop.default-app.website/public/index.php(44): CodeIgniter\CodeIgniter->run()
+=======
+ERROR - 2021-06-05 10:58:52 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 10:58:52 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 10:58:52 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 10:58:52 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 10:58:52 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 10:58:52 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ToolClaim&quot; does not exist
+LINE 1: INSERT INTO &quot;ToolClaim&quot; (&quot;idOrder&quot;, &quot;idClient&quot;) VALUES ('1',...
+                    ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(37): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 11:00:45 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:00:45 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:00:45 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:00:45 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:00:45 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:00:45 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ToolClaim&quot; does not exist
+LINE 1: INSERT INTO &quot;ToolClaim&quot; (&quot;idOrder&quot;, &quot;idClient&quot;) VALUES ('1',...
+                    ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(37): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 11:01:04 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:01:05 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:01:05 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:01:05 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:01:05 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(30): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:01:05 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ToolClaim&quot; does not exist
+LINE 1: INSERT INTO &quot;ToolClaim&quot; (&quot;idOrder&quot;, &quot;idClient&quot;) VALUES ('1',...
+                    ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(37): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 11:02:39 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(29): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:02:39 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(29): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:02:39 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(29): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:02:39 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(29): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:02:39 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;idTool&quot; of relation &quot;Order&quot; does not exist
+LINE 1: INSERT INTO &quot;Order&quot; (&quot;idTool&quot;, &quot;orderGroupId&quot;) VALUES ('4', ...
+                             ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(29): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:02:39 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ToolClaim&quot; does not exist
+LINE 1: INSERT INTO &quot;ToolClaim&quot; (&quot;idOrder&quot;, &quot;idClient&quot;) VALUES ('1',...
+                    ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(36): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 11:10:54 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ToolClaim&quot; does not exist
+LINE 1: INSERT INTO &quot;ToolClaim&quot; (&quot;orderGroupId&quot;, &quot;price&quot;) VALUES ('5...
+                    ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(38): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 11:11:37 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ToolClaim&quot; does not exist
+LINE 1: INSERT INTO &quot;ToolClaim&quot; (&quot;orderGroupId&quot;, &quot;price&quot;) VALUES ('7...
+                    ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(38): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:12:35 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ToolClaim&quot; does not exist
+LINE 1: INSERT INTO &quot;ToolClaim&quot; (&quot;orderGroupId&quot;, &quot;price&quot;) VALUES ('5...
+                    ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(38): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 11:13:00 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ToolClaim&quot; does not exist
+LINE 1: INSERT INTO &quot;ToolClaim&quot; (&quot;orderGroupId&quot;, &quot;clientEmail&quot;, &quot;pri...
+                    ^ in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(38): CodeIgniter\BaseModel->save()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+CRITICAL - 2021-06-05 11:17:48 --> Call to undefined function form_open()
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(246): CodeIgniter\View\View->render()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#4 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(42): view()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#10 {main}
+ERROR - 2021-06-05 11:36:19 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;188.225.83.42&quot; and accepting
+	TCP/IP connections on port 4535?
+CRITICAL - 2021-06-05 11:36:19 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;188.225.83.42&quot; and accepting
+	TCP/IP connections on port 4535?
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(228): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(644): CodeIgniter\Model->doFirst()
+#4 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(22): CodeIgniter\BaseModel->first()
+#5 /home/nick/Documents/ToolsShop/app/Controllers/Payment.php(22): App\Models\ToolsModel->get_item()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Payment->payment()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#11 {main}
+CRITICAL - 2021-06-05 13:58:36 --> Call to a member function links() on null
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#3 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(13): view()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#9 {main}
+CRITICAL - 2021-06-05 13:58:43 --> Call to a member function links() on null
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#3 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(13): view()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#9 {main}
+CRITICAL - 2021-06-05 14:04:39 --> Call to a member function paginate() on null
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#5 {main}
+CRITICAL - 2021-06-05 14:04:55 --> Call to a member function paginate() on null
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#5 {main}
+CRITICAL - 2021-06-05 14:04:56 --> Call to a member function paginate() on null
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#5 {main}
+CRITICAL - 2021-06-05 14:05:04 --> Call to a member function paginate() on null
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#5 {main}
+CRITICAL - 2021-06-05 14:05:23 --> Call to a member function paginate() on null
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#5 {main}
+CRITICAL - 2021-06-05 14:05:24 --> Call to a member function paginate() on null
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#5 {main}
+CRITICAL - 2021-06-05 14:05:25 --> Call to a member function paginate() on null
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#5 {main}
+CRITICAL - 2021-06-05 14:19:07 --> Call to a member function paginate() on array
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#5 {main}
+CRITICAL - 2021-06-05 14:21:22 --> syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(51): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->all()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+CRITICAL - 2021-06-05 14:34:06 --> syntax error, unexpected end of file
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(49): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+ERROR - 2021-06-05 14:45:56 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 14:46:10 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 14:48:10 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 14:48:12 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 14:49:50 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(1) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 14:49:59 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 14:50:01 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 14:51:15 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+ERROR - 2021-06-05 14:51:16 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(62): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#14 {main}
+CRITICAL - 2021-06-05 14:52:44 --> Declaration of App\Models\ToolsModel::delete($id = NULL) should be compatible with CodeIgniter\BaseModel::delete($id = NULL, bool $purge = false)
+#0 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(309): include_once('/home/nick/Docu...')
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#5 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(60): spl_autoload_call()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#11 {main}
+CRITICAL - 2021-06-05 14:52:45 --> Declaration of App\Models\ToolsModel::delete($id = NULL) should be compatible with CodeIgniter\BaseModel::delete($id = NULL, bool $purge = false)
+#0 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(309): include_once('/home/nick/Docu...')
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#5 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(60): spl_autoload_call()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#8 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#11 {main}
+ERROR - 2021-06-05 14:53:51 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(28): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): App\Models\ToolsModel->delete_tool()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 14:54:05 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(28): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): App\Models\ToolsModel->delete_tool()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 14:54:07 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(28): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): App\Models\ToolsModel->delete_tool()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 14:54:07 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(28): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): App\Models\ToolsModel->delete_tool()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 14:54:08 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(28): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): App\Models\ToolsModel->delete_tool()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 14:54:08 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(28): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): App\Models\ToolsModel->delete_tool()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 14:54:09 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(28): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): App\Models\ToolsModel->delete_tool()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+ERROR - 2021-06-05 14:54:09 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;Tools&quot; violates foreign key constraint &quot;Order_id_tool_foreign&quot; on table &quot;Order&quot;
+DETAIL:  Key (id)=(4) is still referenced from table &quot;Order&quot;. in /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:170
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(170): pg_query()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2881): CodeIgniter\Database\BaseConnection->query()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Database/Postgre/Builder.php(253): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Model.php(392): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/BaseModel.php(1025): CodeIgniter\Model->doDelete()
+#8 /home/nick/Documents/ToolsShop/app/Models/ToolsModel.php(28): CodeIgniter\BaseModel->delete()
+#9 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(61): App\Models\ToolsModel->delete_tool()
+#10 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->delete()
+#11 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#12 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#15 {main}
+CRITICAL - 2021-06-05 14:55:56 --> syntax error, unexpected 'endif' (T_ENDIF)
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Pages.php(50): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+CRITICAL - 2021-06-05 15:03:04 --> Invalid file: Clients/edit.php
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(77): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->edit()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+CRITICAL - 2021-06-05 15:04:08 --> Invalid file: Clients/edit.php
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(77): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->edit()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+CRITICAL - 2021-06-05 15:04:14 --> Invalid file: Clients/edit.php
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(77): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->edit()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+CRITICAL - 2021-06-05 15:04:53 --> Invalid file: Clients/edit.php
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(77): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->edit()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+CRITICAL - 2021-06-05 15:04:55 --> Invalid file: Clients/edit.php
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(77): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->edit()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+CRITICAL - 2021-06-05 15:05:37 --> Invalid file: Clients/edit.php
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(77): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->edit()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+CRITICAL - 2021-06-05 15:05:42 --> Invalid file: Clients/edit.php
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/ToolsShop/app/Controllers/Clients.php(77): view()
+#3 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->edit()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#8 {main}
+CRITICAL - 2021-06-05 15:09:12 --> Class 'App\Controllers\S3Client' not found
+#0 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Clients->update()
+#1 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/nick/Documents/ToolsShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 /home/nick/Documents/ToolsShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+>>>>>>> ac1d9e6af6d071ef040f70344f1067a2d623a9d1
+#5 {main}

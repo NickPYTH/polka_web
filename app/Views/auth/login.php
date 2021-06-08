@@ -1,73 +1,79 @@
 <?= $this->extend('templates/layout') ?>
 <?= $this->section('content') ?>
-<div style="margin-top:50px;" class="container grid-lg text-center">
-   <div class="docs-demo columns">
-      <div class="column">
-      <?php echo form_open('auth/login');?>
-         <?php if (isset($message)): ?>
-        <div class="alert alert-danger text-center">Ошибка авторизации</div>
-        <?php endif ?>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>Вход</h3>
+        </div>
+        <div class="col-12">
+            <?php echo form_open('auth/login', 'class="form-group"');?>
             <div class="form-group">
-               <label class="form-label" for="input-example-1">Email</label>
-               <?php echo form_input($identity, '','class="form-input" placeholder="Email" required');?>
+                <?php if (isset($message)): ?>
+                    <div class="alert alert-danger text-center">Ошибка авторизации</div>
+                <?php endif ?>
+                <label for="exampleInputEmail1">Почта</label>
+                <?php echo form_input($identity, '','type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required');?>
             </div>
             <div class="form-group">
-               <label class="form-label" for="input-example-2">Пароль</label>
-               <?php echo form_input($password, '','class="form-input" placeholder="Пароль" required');?>
+                <label for="exampleInputPassword1">Пароль</label>
+                <?php echo form_input($password, '','type="password" class="form-control" id="exampleInputPassword1" required');?>
             </div>
-            <div class="form-group">
-                <label>Запомнить меня</label>
-                <?php echo form_checkbox('remember', '1', false, 'id="remember" ');?>
+            <div class="form-group form-check">
+                <label class="form-check-label mr-4"  for="exampleCheck1">Запомнить меня</label>
+                <?php echo form_checkbox('remember', '1', false, 'class="form-check-input" id="remember" ');?>
             </div>
-            <div class="form-group">
-               <?php echo form_submit('submit', lang('Войти'), 'class="btn btn-primary"');?>
-               <a href="<?= base_url()?>/auth/forgot_password" class="btn btn-link">Забыли пароль</a>
-            </div>
-            <?php echo form_close();?>
-      </div>
-      <div class="divider-vert" data-content="Или"></div>
+            <button type="submit" class="btn btn-primary">Войти</button>
+            <a href="<?= base_url()?>/auth/forgot_password" class="btn btn-link">Забыли пароль</a>
 
-      <div class="column">
-        <?php echo form_open_multipart('auth/register_user');?>
-            <div class="form-group">
-               <label class="form-label">Имя</label>
-               <input class="form-input"type="text" placeholder="Имя" name="Имя">
-            </div>
-            <div class="form-group">
-               <label class="form-label">Фамилия</label>
-               <input class="form-input" type="text" placeholder="Фамилия" name="Фамилия">
-            </div>
-            <div class="form-group">
-               <label class="form-label">Email</label>
-               <input class="form-input" type="email" placeholder="email" name="email">
-            </div>
-            <div class="form-group">
-               <label class="form-label">Компания</label>
-               <input class="form-input" type="text" placeholder="Компания" name="Компания">
-            </div>
-            <div class="form-group">
-               <label class="form-label">Телефон</label>
-               <input class="form-input" type="text" placeholder="Телефон" name="Телефон">
-            </div>
-            <div class="form-group">
-               <label class="form-label">Телефон</label>
-               <input type="file" accept="image/*" class="form-input" id="inputGroupFile01" name="picture" aria-describedby="inputGroupFileAddon01">
-            </div>
-            <div class="form-group">
-               <label class="form-label">Пароль</label>
-               <input class="form-input" type="text" placeholder="Пароль" name="Пароль" id="pass">
-            </div>
-            <div class="form-group">
-               <label class="form-label">Подтвердите пароль</label>
-               <input class="form-input" type="text" placeholder="Повторите пароль" id="confirm_pass">
-            </div>
-            <div class="form-group">
-               <?php echo form_submit('submit', lang('Зарегистрироваться'), 'class="btn btn-primary btn-block"');?>
-               <a href="<?= base_url()?>/pages/agreement" class="btn btn-link">Пользовательское соглашение</a>
-            </div>
             <?php echo form_close();?>
-      </div>
-   </div>
-</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>Регситрация</h3>
+        </div>
+        <div class="col-12">
+            <?php echo form_open_multipart('auth/register_user', 'class="form-group"');?>
+
+            <div class="form-group">
+                <label >Имя</label>
+                <input type="text" class="form-control" required name="Имя">
+            </div>
+            <div class="form-group">
+                <label >Фамилия</label>
+                <input type="text" class="form-control" required name="Фамилия">
+            </div>
+            <div class="form-group">
+                <label >Email</label>
+                <input type="email" class="form-control" required name="Email">
+            </div>
+            <div class="form-group">
+                <label >Компания</label>
+                <input type="text" class="form-control" required name="Компания">
+            </div>
+            <div class="form-group">
+                <label >Телефон</label>
+                <input type="text" class="form-control" required name="Телефон">
+            </div>
+            <div class="form-group">
+                <label >Изображение</label>
+                <input type="file" accept="image/*" class="form-control" id="inputGroupFile01" name="picture" aria-describedby="inputGroupFileAddon01">
+            </div>
+            <div class="form-group">
+                <label >Пароль</label>
+                <input type="password" class="form-control" required name="Пароль">
+            </div>
+            <div class="form-group">
+                <label >Повторите пароль</label>
+                <input type="password" class="form-control" required>
+            </div>
+
+
+            <?php echo form_submit('submit', lang('Зарегистрироваться'), 'class="btn btn-primary"');?>
+            <a href="<?= base_url()?>/pages/agreement" class="btn btn-link">Пользовательское соглашение</a>
+
+            <?php echo form_close();?>
+        </div>
+    </div>
 
 <?= $this->endSection() ?>

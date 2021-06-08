@@ -1,0 +1,17 @@
+ERROR - 2021-06-03 23:12:42 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused
+	Is the server running on host &quot;188.225.83.42&quot; and accepting
+	TCP/IP connections on port 4535?
+CRITICAL - 2021-06-03 23:12:42 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused
+	Is the server running on host &quot;188.225.83.42&quot; and accepting
+	TCP/IP connections on port 4535?
+#0 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1981): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/Model.php(561): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/BaseModel.php(1147): CodeIgniter\Model->countAllResults()
+#4 /var/www/html/tools-shop.default-app.website/app/Controllers/Pages.php(45): CodeIgniter\BaseModel->paginate()
+#5 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#6 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/tools-shop.default-app.website/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/tools-shop.default-app.website/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

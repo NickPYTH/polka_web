@@ -6,121 +6,68 @@ class All extends Seeder
 {
     public function run()
     {
-        // Seed Books
         $data = [
-            'Name'=>'Алгоритмы на Java',
-            'Author'=>'Роберт Седжвик, Кевин Уэйн'
+            'Name'=>'Java book',
+            'Description'=>'Java book',
+            'Price'=>2000,
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//book1.png',
         ];
         $this->db->table('Books')->insert($data);
         $data = [
-            'Name'=>'Сам себе программист',
-            'Author'=>'Кори Альтхофф'
+            'Name'=>'Java book 1',
+            'Description'=>'Java book 1',
+            'Price'=>1500,
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//book2.png',
         ];
         $this->db->table('Books')->insert($data);
         $data = [
-            'Name'=>'Rapid Development',
-            'Author'=>'Стив Макконел'
+            'Name'=>'Java book 2',
+            'Description'=>'Java book 2',
+            'Price'=>2500,
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//book3.png',
         ];
         $this->db->table('Books')->insert($data);
         $data = [
-            'Name'=>'Кодеры за работой',
-            'Author'=>'Питер Сейбел'
-        ];
-        $this->db->table('Books')->insert($data);
-        $data = [
-            'Name'=>'Предметно-ориентированное проектирование',
-            'Author'=>'Эрик Эванс'
-        ];
-        $this->db->table('Books')->insert($data);
-        $data = [
-            'Name'=>'Искусство программирования',
-            'Author'=>'Дональд Кнут'
+            'Name'=>'Java book 3',
+            'Description'=>'Java book 3',
+            'Price'=>1500,
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//book4.png',
         ];
         $this->db->table('Books')->insert($data);
 
-        // Seed Reader
-        $this->db->table('Reader')->insert($data);
+        
         $data = [
             'FIO'=>'Гуртовенко Андрей Викторович',
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//stupid_face.png',
         ];
-        $this->db->table('Reader')->insert($data);
+        $this->db->table('Client')->insert($data);
         $data = [
             'FIO'=>'Сиренко Николай Викторович',
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//stupid_face.png',
         ];
-        $this->db->table('Reader')->insert($data);
+        $this->db->table('Client')->insert($data);
         $data = [
             'FIO'=>'Куцуев Егор Игоревич',
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//stupid_face.png',
         ];
-        $this->db->table('Reader')->insert($data);
+        $this->db->table('Client')->insert($data);
         $data = [
             'FIO'=>'Бардаков Павел Дмитриевич',
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//stupid_face.png',
         ];
-        $this->db->table('Reader')->insert($data);
+        $this->db->table('Client')->insert($data);
         $data = [
             'FIO'=>'Алексеев Алексей Вадимович',
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//stupid_face.png',
         ];
-        $this->db->table('Reader')->insert($data);
+        $this->db->table('Client')->insert($data);
         $data = [
             'FIO'=>'Ахмитов Кирилл Русланович',
+            'pictureUrl'=>'http://polka.tplinkdns.com:9000/bookshop//stupid_face.png',
         ];
-        $this->db->table('Reader')->insert($data);
+        $this->db->table('Client')->insert($data);
         
-        // Seed instance
-        $data = [
-            'id_book'=>'1',
-            'wear_coefficient'=>'1'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'1',
-            'wear_coefficient'=>'2'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'1',
-            'wear_coefficient'=>'3'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'2',
-            'wear_coefficient'=>'1'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'2',
-            'wear_coefficient'=>'2'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'3',
-            'wear_coefficient'=>'1'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'3',
-            'wear_coefficient'=>'1'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'4',
-            'wear_coefficient'=>'1'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'5',
-            'wear_coefficient'=>'1'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'5',
-            'wear_coefficient'=>'1'
-        ];
-        $this->db->table('Instance')->insert($data);
-        $data = [
-            'id_book'=>'6',
-            'wear_coefficient'=>'2'
-        ];
-        $this->db->table('Instance')->insert($data);
+
 
         
 

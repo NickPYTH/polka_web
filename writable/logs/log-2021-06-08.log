@@ -1,0 +1,62 @@
+CRITICAL - 2021-06-08 06:52:27 --> Call to undefined method App\Models\BooksModel::get_all_tools
+#0 /home/nick/Documents/BookShop/app/Controllers/Pages.php(47): CodeIgniter\Model->__call()
+#1 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#2 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nick/Documents/BookShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#6 {main}
+CRITICAL - 2021-06-08 06:52:28 --> Call to undefined method App\Models\BooksModel::get_all_tools
+#0 /home/nick/Documents/BookShop/app/Controllers/Pages.php(47): CodeIgniter\Model->__call()
+#1 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#2 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nick/Documents/BookShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#6 {main}
+CRITICAL - 2021-06-08 06:52:29 --> Call to undefined method App\Models\BooksModel::get_all_tools
+#0 /home/nick/Documents/BookShop/app/Controllers/Pages.php(47): CodeIgniter\Model->__call()
+#1 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#2 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nick/Documents/BookShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#6 {main}
+CRITICAL - 2021-06-08 06:52:29 --> Call to undefined method App\Models\BooksModel::get_all_tools
+#0 /home/nick/Documents/BookShop/app/Controllers/Pages.php(47): CodeIgniter\Model->__call()
+#1 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#2 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nick/Documents/BookShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#6 {main}
+CRITICAL - 2021-06-08 06:52:29 --> Call to undefined method App\Models\BooksModel::get_all_tools
+#0 /home/nick/Documents/BookShop/app/Controllers/Pages.php(47): CodeIgniter\Model->__call()
+#1 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#2 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/nick/Documents/BookShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#6 {main}
+CRITICAL - 2021-06-08 07:00:43 --> syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/View/View.php(246): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#3 /home/nick/Documents/BookShop/app/Controllers/Pages.php(51): view()
+#4 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#5 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#6 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/nick/Documents/BookShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#9 {main}
+CRITICAL - 2021-06-08 07:00:58 --> syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/View/View.php(246): CodeIgniter\View\View->render()
+#2 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#3 /home/nick/Documents/BookShop/app/Controllers/Pages.php(51): view()
+#4 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Pages->view()
+#5 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#6 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/nick/Documents/BookShop/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 /home/nick/Documents/BookShop/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/nick/Docu...')
+#9 {main}

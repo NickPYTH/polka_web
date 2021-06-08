@@ -5,16 +5,12 @@ use App\Services\GoogleClient;
 use Google_Service_Oauth2;
 use IonAuth\Libraries\IonAuth;
 use function MongoDB\BSON\toJSON;
-use App\Models\ReaderModel;
+use App\Models\ClientModel;
 use Aws\S3\S3Client;
+
 
 class Auth extends \IonAuth\Controllers\Auth
 {
-    /**
-     * If you want to customize the views,
-     *  - copy the ion-auth/Views/auth folder to your Views folder,
-     *  - remove comment
-     */
     protected $viewsFolder = 'auth';
     protected $google_client;
 
@@ -28,9 +24,6 @@ class Auth extends \IonAuth\Controllers\Auth
 
     function randomPassword() {
         $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
-        /*for ($i = 0; $i < 8; $i++) {
-            array_push($pass,$alphabet[rand(0, strlen($alphabet)-1)]);
-        }*/
         return $alphabet;
     }
 
@@ -58,7 +51,7 @@ class Auth extends \IonAuth\Controllers\Auth
                 $this->ionAuth->register($data['email'], $this->randomPassword(), $data['email'], ['google_id' => $data['id'],
                     'first_name' => $data['givenName'],
                     'last_name' => $data['familyName'],
-                    'picture_url' => $data['picture'],
+                    'pictureUrl' => $data['picture'],
                     'locale' => $data['locale'],
                     'company' => $data['hd']
                     ], [1]);
@@ -118,13 +111,37 @@ class Auth extends \IonAuth\Controllers\Auth
         $last_name   = $this->request->getPost('Фамилия');
         $company     = $this->request->getPost('Компания');
         $phone       = $this->request->getPost('Телефон');
-        $email       = strtolower($this->request->getPost('email'));
+        $email       = strtolower($this->request->getPost('Email'));
         $password    = $this->request->getPost('Пароль');
 
         
         if ($this->request->getPost() )
         {
-            
+            $file = $this->request->getFile('picture');
+            if ($file->getSize() != 0) {
+                $s3 = new S3Client([
+                    'version' => 'latest',
+                    'region'  => 'us-east-1',
+                    'endpoint' => 'http://polka.tplinkdns.com:9000/',
+                    'use_path_style_endpoint' => true,
+                    'credentials' => [
+                        'key'    => 'minioadmin',
+                        'secret' => 'minioadmin',
+                    ],
+                ]);
+
+                $ext = explode('.', $file->getName());
+                $ext = $ext[count($ext) - 1];
+                //загрузка файла в хранилище
+                $insert = $s3->putObject([
+                    'Bucket' => 'bookshop', //чтение настроек окружения из файла .env
+                    //генерация случайного имени файла
+                    'Key' => getenv('S3_KEY') . '/file' . rand(100000, 999999) . '.' . $ext,
+                    'Body' => fopen($file->getRealPath(), 'r+')
+                ]);
+
+            }
+
             $identity = ($identityColumn === 'email') ? $email : $this->request->getPost('identity');
 
 
@@ -133,42 +150,16 @@ class Auth extends \IonAuth\Controllers\Auth
                 'last_name'  => $last_name,
                 'company'    => $company,
                 'phone'      => $phone,
+                'pictureUrl' => $insert['ObjectURL'],
             ];
         }
         if ($this->request->getPost() && $this->ionAuth->register($identity, $password, $email, $additionalData))
         {
-            $file = $this->request->getFile('picture');
-                if ($file->getSize() != 0) {
-                    $s3 = new S3Client([
-                        'version' => 'latest',
-                        'region'  => 'us-east-1',
-                        'endpoint' => 'http://polka.tplinkdns.com:9000/',
-                        'use_path_style_endpoint' => true,
-                        'credentials' => [
-                                'key'    => 'minioadmin',
-                                'secret' => 'minioadmin',
-                            ],
-                    ]);
-
-                    $ext = explode('.', $file->getName());
-                    $ext = $ext[count($ext) - 1];
-                    //загрузка файла в хранилище
-                    $insert = $s3->putObject([
-                        'Bucket' => 'weblib', //чтение настроек окружения из файла .env
-                        //генерация случайного имени файла
-                        'Key' => getenv('S3_KEY') . '/file' . rand(100000, 999999) . '.' . $ext,
-                        'Body' => fopen($file->getRealPath(), 'r+')
-                    ]);
-
-                }
-
-
-
-                $model = new ReaderModel();
+                $model = new ClientModel();
                 
                 $model->save([
                     'FIO' => $first_name.' '.$last_name,
-                    'picture_url' => $insert['ObjectURL'],
+                    'pictureUrl' => $insert['ObjectURL'],
                 ]);
 
 
@@ -231,7 +222,7 @@ class Auth extends \IonAuth\Controllers\Auth
                 'value' => set_value('password_confirm'),
             ];
             
-            return $this->renderPage($this->viewsFolder . DIRECTORY_SEPARATOR . 'register_user', $this->data);
+            return $this->renderPage($this->viewsFolder . DIRECTORY_SEPARATOR . 'login', $this->data);
         }
     }
 
