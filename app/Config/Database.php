@@ -33,12 +33,12 @@ class Database extends Config
 
 	public $default = [
         'DSN'      => '',
-        'hostname' => 'polka.tplinkdns.com',
+        'hostname' => '188.225.83.42',
         'username' => 'postgres',
-        'password' => 'polka12345',
-        'database' => 'postgres',
+        'password' => 'VFQYTHSCJCEN',
+        'database' => 'books_shop',
         'DBDriver' => 'Postgre',
-        'DBPrefix' => '',  
+        'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),
         'cacheOn'  => false,
@@ -50,7 +50,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 5432,
+        'port'     => 4535,
     ];
 
  
