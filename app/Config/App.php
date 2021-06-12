@@ -24,9 +24,8 @@ class App extends BaseConfig
 	 * @var string
 	 */
 
-	public $baseURL = 'http://localhost:8080/';
-	#public $baseURL = 'http://polka.tplinkdns.com/';
-    #public $baseURL = 'http://377176-cu50630.tmweb.ru/';
+	#public $baseURL = 'http://localhost:8080/';
+	public $baseURL = 'http://polka.tplinkdns.com/';
 	/** hq2S5TT_HEFPBf3v37TZmUtT
 	 * --------------------------------------------------------------------------
 	 * Index File
