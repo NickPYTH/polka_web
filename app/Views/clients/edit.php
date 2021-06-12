@@ -9,7 +9,7 @@
         <div class="col-12 d-flex justify-content-center">
 
             <div class="card" style="width: 28rem;" >
-                <img src="<?= $rating["pictureUrl"] ?>"  class="mt-3 card-img-top" height="100px" width="100px" alt="...">
+                <img src="<?= $rating["pictureUrl"] ?>"  class="mt-3 card-img-top" height="250px" width="100px" alt="...">
                 <div class="card-body text-center">
                     <?= form_open_multipart('Clients/update'); ?>
                     <input type="hidden" name="id" value="<?= $rating["id"] ?>">

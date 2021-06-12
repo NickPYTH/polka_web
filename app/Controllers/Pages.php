@@ -1,5 +1,6 @@
 <?php
 namespace App\Controllers;
+use App\Models\ClientModel;
 use CodeIgniter\Model;
 use IonAuth\Libraries\IonAuth;
 use function MongoDB\BSON\toJSON;
@@ -83,13 +84,13 @@ class Pages extends BaseController
                     $ext = $ext[count($ext) - 1];
                     //загрузка файла в хранилище
                     $insert = $s3->putObject([
-                        'Bucket' => 'toolsrent', //чтение настроек окружения из файла .env
+                        'Bucket' => 'libra', //чтение настроек окружения из файла .env
                         //генерация случайного имени файла
                         'Key' => getenv('S3_KEY') . '/file' . rand(100000, 999999) . '.' . $ext,
                         'Body' => fopen($file->getRealPath(), 'r+')
                     ]);
 
-                    $model = new ToolsModel();
+                    $model = new BooksModel();
                 
                     $model->save([
                         'Name' => $name,
@@ -110,7 +111,7 @@ class Pages extends BaseController
         {
             return redirect()->to('/auth/login');
         }
-        $model = new ToolsModel();
+        $model = new BooksModel();
         $model->delete($id);
         return redirect()->to('/');
     }

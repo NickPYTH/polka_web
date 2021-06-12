@@ -134,7 +134,7 @@ class Auth extends \IonAuth\Controllers\Auth
                 $ext = $ext[count($ext) - 1];
                 //загрузка файла в хранилище
                 $insert = $s3->putObject([
-                    'Bucket' => 'bookshop', //чтение настроек окружения из файла .env
+                    'Bucket' => 'libra', //чтение настроек окружения из файла .env
                     //генерация случайного имени файла
                     'Key' => getenv('S3_KEY') . '/file' . rand(100000, 999999) . '.' . $ext,
                     'Body' => fopen($file->getRealPath(), 'r+')

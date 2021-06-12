@@ -18,30 +18,38 @@
                     <?php if (! $ionAuth->loggedIn()): ?>
                         <a class="nav-link" href="<?= base_url()?>/auth/login">Войти <span class="sr-only"></span></a>
                     <?php endif ?>
+                </li>
+                <li class="nav-item active">
                     <?php if ( $ionAuth->loggedIn()): ?>
                         <a class="nav-link" href="<?= base_url()?>/auth/logout">Выйти <span class="sr-only"></span></a>
                     <?php endif ?>
-
+                </li>
+                <li class="nav-item active">
                     <?php if ($ionAuth->loggedIn()): ?>
                     <?php if ($ionAuth->isAdmin()): ?>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<?= base_url()?>">Книги <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
                         <a class="nav-link" href="<?= base_url()?>/Clients/all">Клиенты <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
                         <a class="nav-link" href="<?= base_url()?>/Pages/add">Добавить товар <span class="sr-only"></span></a>
+                </li>
                     <?php endif ?>
                     <?php endif ?>
                 </li>
             </ul>
-            <?php if (! $ionAuth->loggedIn()): ?>
+
                 <?= form_open('Pages/view',['style' => 'display: flex']); ?>
                 <input class="form-control mr-sm-2" type="search" placeholder="Что ищем?" name="search" value="<?= $search; ?>" aria-label="Поиск">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
                 </form>
-            <?php endif ?>
             <form class="form-inline my-2 my-lg-0">
 
             </form>
         </div>
     </nav>
-    
 
     <main role="main">
         <?= $this->renderSection('content') ?>
